@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Blackjack_old.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Blackjack.c">
       <Filter>Source Files</Filter>
     </ClCompile>
