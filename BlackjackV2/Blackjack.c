@@ -94,21 +94,19 @@ int main() {
 	CARD deck[DECK_SIZE];
 	int bet;
 
-
 	showHeader();
 
 	setPlayer(pName, sizeof(pName), &bankroll);
-	printf("Player Name is %s with Bankroll: %d\n\n", pName, bankroll);
+	printf("Player Name is %s with Bankroll %d\n\n", pName, bankroll);
 
+	bet = getBet(bankroll);
+	printf("Current Bet: %d\n\n", bet);
 
 	printf("Initializing deck...\n");
 	initDeck(deck);
 
-	printf("Shuffling deck...\n\n");
+	printf("Shuffling deck...\n");
 	suffleDeck(deck);
-
-	bet = getBet(bankroll);
-	printf("Current Bet: %d\n", bet);
 
 
 	return 0;
